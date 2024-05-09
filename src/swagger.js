@@ -10,14 +10,15 @@ const doc = {
   basePath: '/api/v1',   
   servers: [
     {
-        "url": "http://locahost:5000", "description": "local server"
-    },
+      "url":"https://skiywater-file-upload.onrender.com", "description":"production server"
+  },
     {
-        "url":"https://skiywater-file-upload.onrender.com", "description":"production server"
+        "url": "http://locahost:5000", "description": "local server"
     }
-  ],          // by default: '/'
-  schemes: ['http', 'https'],              // by default: ['http']
-  consumes: ['application/json', 'multipart/form-data'],             // by default: ['application/json']
+    
+  ],          
+  schemes: ['http', 'https'],             
+  consumes: ['application/json', 'multipart/form-data'],             
   components: {
     securitySchemes: {
       bearerAuth: {

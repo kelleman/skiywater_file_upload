@@ -24,7 +24,7 @@ const authorizeRole = (requiredRole) => {
   return (req, res, next) => {
     // Check if authenticated user's role matches required role
     if (req.user && req.user.role === requiredRole) {
-      next(); // User is authorized, proceed to next middleware
+      next(); 
     } else {
       return res.status(403).json({ error: 'Unauthorized' });
     }
