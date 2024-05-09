@@ -13,7 +13,7 @@ const doc = {
         "url": "http://locahost:5000", "description": "local server"
     },
     {
-        "url":"https://ezkye-prac.onrender.com", "description":"production server"
+        "url":"https://skiywater-file-upload.onrender.com", "description":"production server"
     }
   ],          // by default: '/'
   schemes: ['http', 'https'],              // by default: ['http']
